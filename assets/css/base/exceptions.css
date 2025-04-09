@@ -1,0 +1,8 @@
+/* exceptions.css */
+.invisible {
+  display: none !important;
+}
+
+.inactif {
+  pointer-events: none;
+}

@@ -1,0 +1,31 @@
+/*Code a été pris dans le cours 17*/
+:root {
+    --couleur-bg:rgba(232, 232, 232, 0.8);
+    --couleur-texte: black;
+    --couleur-principale: crimson;
+    --couleur-accent: grey;
+    --police-principale: "Helvetica";
+    --espace-sm: 0.8rem;
+}
+[data-theme="jour"] {
+    --couleur-bg: rgba(232, 232, 232, 0.8);
+    --couleur-bg-sans-transparence: rgb(232, 232, 232);
+    --couleur-bg-general: white;
+    --couleur-texte: black;
+    --couleur-texte-hover: crimson;
+    --couleur-bouton: crimson; 
+    --couleur-boutons-hover:color-mix(in oklab, crimson, black 10%);
+    --couleur-bouton-texte: white; 
+    --couleur-box-shadow: rgba(0, 0, 0, 0.3);
+}
+[data-theme="nuit"] {
+    --couleur-bg: black;
+    --couleur-bg-sans-transparence: black;
+    --couleur-bg-general: black;
+    --couleur-texte: white;
+    --couleur-texte-hover: crimson;
+    --couleur-bouton:  crimson; 
+    --couleur-boutons-hover:color-mix(in oklab, crimson, black 10%);
+    --couleur-bouton-texte: white;
+    --couleur-box-shadow: rgb(247, 244, 244);
+}

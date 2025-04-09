@@ -1,0 +1,47 @@
+/*navigation.css*/
+body > header {
+  padding: 2rem;
+  background-color: var(--couleur-bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  display: flex;
+  gap: 3rem;
+}
+
+nav .logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+[data-theme="nuit"] nav .logo.jour{
+  display: none;
+}
+
+[data-theme="jour"] nav .logo.nuit{
+  display: none;
+}
+
+
+nav .nav-liste {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li a {
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-conteneur {
+  height: 50vh;
+}
+
+/*------------------------------------------------- */

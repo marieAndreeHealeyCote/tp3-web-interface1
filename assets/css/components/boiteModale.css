@@ -1,0 +1,23 @@
+/*Code a été pris dans le cours 17*/
+.boite-modale {
+    position: fixed;
+    z-index: 666;
+    bottom: 1rem;
+    right: 1rem;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(248, 246, 246, 0.952);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    &[data-type="ERREUR"] {
+        background-color:  var(--couleur-bg-sans-transparence);
+    }
+    &[data-type="SUCCES"] {
+        background-color: var(--couleur-principale);
+    }
+}
+
+ 

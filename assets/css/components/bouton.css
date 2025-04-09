@@ -1,0 +1,83 @@
+/* bouton-accueil */
+/* Code bouton sur MDN https://developer.mozilla.org/fr/docs/Web/HTML/Element/button*/
+.styliser {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: inset 2px 2px 3px grey,
+    inset -2px -2px 3px darkblue;
+}
+
+.styliser:hover {
+  background-color: crimson;
+}
+
+.styliser:active {
+  box-shadow: inset -2px -2px 3px grey,
+    inset 2px 2px 3px darkblue;
+}
+
+.boutons-tri {
+  display: flex;
+  gap: 1em;
+}
+
+/*------------------------------------------------- */
+
+/* bouton-formulaire.css*/
+.bouton {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  background-color: var( --couleur-bouton);
+
+  font-size: 1rem;
+  color: var(--couleur-bouton-texte);
+
+  transition: all 350ms;
+
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.bouton a{
+  color: var(--couleur-bouton-texte);
+}
+
+.bouton:hover {
+  background-color: var(--couleur-boutons-hover);
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.bouton.inactif {
+  background-color: grey;
+  cursor: none;
+  pointer-events: none;
+}
+
+/*------------------------------------------------- */
+
+[data-theme="nuit"] .bouton.jour{
+  --couleur-bouton: black; 
+  --couleur-boutons-hover:rgb(46, 43, 43);
+  --couleur-bouton-texte: white;
+}
+
+[data-theme="jour"] .bouton.nuit{
+  --couleur-bouton: crimson; 
+  --couleur-boutons-hover:color-mix(in oklab, crimson, black 10%);
+  --couleur-bouton-texte: white; 
+}

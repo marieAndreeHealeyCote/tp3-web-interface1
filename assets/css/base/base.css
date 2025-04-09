@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--couleur-texte);
+  background-color: var(--couleur-bg-general);
+}
+
+main {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+}
+
+main section {
+  flex-grow: 1;
+  flex-basis: 60%;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 1em 0 1em;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--couleur-texte);
+  transition: all 350ms;
+  padding: 0.5em 1.5em;
+}
+a:hover {
+  color: var(--couleur-texte-hover);
+  text-decoration: underline;
+}
+
+a.actif,
+.produit.actif p {
+  color: var(--couleur-texte);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+p{
+  margin-bottom: 1em;
+}
+

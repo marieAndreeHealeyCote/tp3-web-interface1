@@ -1,0 +1,37 @@
+/* barre-progression */
+.barre-progression__conteneur {
+  display: flex;
+
+  width: 20vw;
+  padding-bottom: 2rem;
+}
+
+.barre-progression {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.barre-progression__remplissage {
+  width: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: crimson;
+
+  transition: width 0.5s;
+}
+
+.barre-progression__remplissage__33 {
+  width: 33%;
+}
+
+.barre-progression__remplissage__66 {
+  width: 66%;
+}
+
+.barre-progression__remplissage__100 {
+  width: 100%;
+}
+
+/*------------------------------------------------- */

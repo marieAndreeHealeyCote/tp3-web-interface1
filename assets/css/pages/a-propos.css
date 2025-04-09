@@ -1,0 +1,9 @@
+[data-page="a-propos"] {
+    & main {
+        display: flex;
+        flex-wrap: wrap;
+        & > * {
+            flex-basis: 30%;
+        }
+    }
+}

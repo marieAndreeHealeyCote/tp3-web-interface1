@@ -1,0 +1,46 @@
+difficultés rencontrées : 
+
+carrousel :
+1ere tentative: carrousel slick js (jquery) https://kenwheeler.github.io/slick/ (échec)
+2e tentative: carrousel swiper js https://swiperjs.com/get-started (échec)
+3e tentative: codepen slider js https://codepen.io/Maxel88/pen/zYrdNeK (réussite)
+
+loop :
+devoir modifier le codepen slider js (inverser les if pour avoir le comportement attendu... un beau casse-tête)
+établir une fonction setInterval() à défaut d'une fonction setTimeout ou d'une fonction loop()
+difficultés à mettre un événement car on perd le contexte du 'this'... c'est complexe 
+
+module :
+basculer la navigation en module a été problématique... il a fallu revoir la navigation
+ajouter les imports dans toutes les pages du site pour que ça fonctionne (ne pas en oublier... sinon ça bug)
+
+scrollanimator:
+un défi... le code du cours 17 m'a grandement aidé à faire l'animation. 
+
+boite modale :
+après plusieurs tentatives et de essais/erreurs, j'ai fini par faire apparaître la boite modale... il y avait une erreur de js évidemment... une confusion avec localstorage...
+les console.log (en grande quantité) pour y arriver... déplacer l'ordre des fonctions dans le init dans la page 'à propos js'
+et ajouter un paramètre à la fonction demarrerPopUp (oublier un 3e paramètre... )
+
+mode nuit/jour:
+ça été plus complexe que je ne l'aurais imaginé... il fallait y aller morceau par morceau... (zone par zone, par exemple, navigation, main, bouton, etc.)
+Les variables ont sauvées du temps !
+
+5 animations (ou peut-être plus): 
+onscroll (scrollanimator, le texte qui apparait au scroll de la souris) 
+onclic (transition dans le carrousel avec les flèches quand on veut naviguer)
+transition en loop du carroussel
+hover (transition sur les flèches du carrousel)
+hover (transition sur titre articles en vedette qui a une translation)
+hover (transition 'ease in' sur les 'cartes' qui s'aggrandissement à cause du scale)
+hover (transition sur les boutons des cartes)
+
+Je n'ai pas voulu utiliser une librairie pour les animations... 
+
+À noter que... 
+J'ai manqué de temps... je n'ai pas utilisé la page test js pour faire mes tests et mes validations... 
+
+conclusion:
+avec plus de temps, il serait intéressant de refaire le projet, maintenant qu'on connaît plus de fonctionnalités de javascript (sky is the limit hahah...)
+sinon, il aurait été intéressant de terminer le projet tout en module et de compléter toutes les pages (projet personnel à faire à l'avenir, peut-être... pourquoi pas) 
+mais surtout avec des animations plus complexes. 

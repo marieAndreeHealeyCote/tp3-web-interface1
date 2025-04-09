@@ -1,0 +1,75 @@
+/* Des éléments ont été inspirés du codepen suivant
+ * @see https://codepen.io/Maxel88/pen/zYrdNeK 
+ */
+.carrousel {
+    display: block;
+    /* width: 100%; */
+    width: 90vw; /*trouver une facon d'avoir le 100% sans avoir les images qui affichent toutes*/
+    margin: 1em auto;
+
+    & .carrousel__titre {
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem;
+        transition: transform 1s ease-in-out, left 1s ease-in-out;
+    }
+
+    & .carrousel__conteneur {
+        position: relative;
+        height: 60vh;
+        overflow: hidden;
+
+
+        & .carrousel__liste {
+            display: flex;
+            -webkit-transition: .2s;
+            transition: .2s;
+
+            & .carrousel__image-conteneur {
+                width: 100%;
+                height: 100%;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+        }
+
+        & .carrousel__controles {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            inset: 0;
+            z-index: 1;
+
+            & [data-direction] {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-size: 2rem;
+                color: var(--couleur-principale);
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 1rem;
+                transition: all 0.1s;
+
+                &:hover {
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+            }
+        }
+    }
+}
+.carrousel__conteneur:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.carrousel__titre:hover{
+    transform: translateX(42px);
+    color: crimson;
+}

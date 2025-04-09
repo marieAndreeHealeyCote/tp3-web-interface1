@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire TP2</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- source logo https://www.canva.com/design/DAGewj0MDyg/TEk7KuX0lNiyKDl4-_WTkg/edit?locale=fr-FR -->
+        <!-- source images de produits https://www.pexels.com/fr-fr/ -->
+        <script src="assets/js/pages/formulaire.js" type="module"></script>
+    </head>
+</head>
+<body data-theme="nuit">
+    <header>
+        <nav id="nav-principale">
+            <img src="assets/img/logo1.png" alt="logo" class="logo jour">
+            <img src="assets/img/logo2.png" alt="logo" class="logo nuit">
+            <ul class="nav-liste formulaire">
+            </ul>
+            <ul data-mode>
+                <li data-mode-option="jour">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                    </svg>
+                </li>
+                <li data-mode-option="nuit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <header>
+                <h1>Formulaire de vos achats</h1>
+                <div class="barre-progression__conteneur">
+                    <div class="barre-progression">
+                        <div class="barre-progression__remplissage"></div>
+                    </div>
+                </div>
+            </header>
+            <section data-page="1" class="infos-client">
+                <h2>Informations du client</h2>
+                <div class="groupe-champs">
+                    <label for="nom">Nom complet *</label>
+                    <input type="text" id="nom" name="nom" required pattern="^[A-Za-zÀ-ÿ .'\-]+$" placeholder="John Doe">
+                    <p class="message-erreur"></p>
+                </div>
+                <div class="groupe-champs">
+                    <label for="telephone">Téléphone *</label>
+                    <input type="tel" id="telephone" name="telephone" required pattern="\d{3}-\d{3}-\d{4}" placeholder="555-555-5555">
+                    <p class="message-erreur"></p>
+                </div>
+                <div class="groupe-champs">
+                    <label for="email">Courriel *</label>
+                    <input type="email" id="email" name="courriel" required placeholder="johnDoe@gmail.com">
+                    <p class="message-erreur"></p>
+                </div>
+                <div class="groupe-champs">
+                    <label for="adresse">Adresse *</label>
+                    <input type="text" id="adresse" name="adresse" required placeholder="6220, rue Sherbrooke Est">
+                    <p class="message-erreur"></p>
+                </div>
+                <div class="groupe-champs">
+                    <label for="ville">Ville *</label>
+                    <input type="text" id="ville" name="ville" required pattern="^[A-Za-zÀ-ÿ .'\-]+$" placeholder="Montréal">
+                    <p class="message-erreur"></p>
+                </div>
+                <div class="groupe-champs">
+                    <label for="code-postal">Code postal *</label>
+                    <input type="text" id="code-postal" name="code-postal" required pattern="[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d" placeholder="H1N 1C1">
+                    <p class="message-erreur"></p>
+                </div>
+            </section>
+            <section data-page="2" class="infos-produit">
+                <h2>Informations de la commande</h2>
+                <div class="groupe-champs">
+                    <label for="produit">Produit *</label>
+                    <select id="produit" name="produit" required>
+                        <option value="" selected disabled hidden>Choisir ici</option>
+                        <option value="salopette">Salopette</option>
+                        <option value="cargo">Cargo</option>
+                        <option value="casquette">Casquette</option>
+                        <option value="collier">Collier</option>
+                        <option value="jeans">Jeans</option>
+                        <option value="chemisier">Chemisier</option>
+                    </select>
+                    <p class="message-erreur"></p>
+                </div>
+                <div class="groupe-champs">
+                    <label for="quantite">Quantité *</label>
+                    <input type="number" id="quantite" name="quantite" min="1" max="10" required>
+                    <p class="message-erreur"></p>
+                </div>
+                <div class="groupe-champs">
+                    <label for="date">Date de livraison *</label>
+                    <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    min="2025-03-09"
+                    max="2025-03-30"
+                    >
+                    <p class="message-erreur"></p>
+                </div>
+                <div class="groupe-champs">
+                    <span class="label">Mode de livraison *</span>
+                    <label><input type="radio" id="livraison-domicile" name="livraison" value="domicile" required> À domicile</label>
+                    <label><input type="radio" id="livraison-boutique" name="livraison" value="boutique"> En boutique</label>
+                    <p class="message-erreur">Veuillez sélectionner un mode de livraison</p>
+                </div>
+            </section>
+            <section data-page="3" class="resume">
+                <h2>Résumé de la commande</h2>
+                <div class="resume__client">
+                    <h3>Client</h3>
+                    <p>Nom complet: <span id="resume-nom"></span></p>
+                    <p>Telephone: <span id="resume-telephone"></span></p>
+                    <p>Courriel: <span id="resume-courriel"></span></p>
+                    <p>Adresse: <span id="resume-adresse"></span></p>
+                    <p>Ville: <span id="resume-ville"></span></p>
+                    <p>Code postal: <span id="resume-code-postal"></span></p>
+                </div>
+                <div class="resume__produit">
+                    <h3>Commande</h3>
+                    <p>Produit: <span id="resume-produit"></span></p>
+                    <p>Quantité: <span id="resume-quantite"></span></p>
+                    <p>Date de livraison: <span id="resume-date"></span></p>
+                    <p>Mode de livraison: <span id="resume-livraison"></span></p>
+                </div>
+            </section>
+            <section data-page="4" class="confirmation">
+                <h2>#00000 Commande confirmée!</h2>
+                <p>Vous recevrez une courriel bientôt avec le détail de votre commande.</p>
+                <p>Merci d'avoir acheté chez nous!</p>
+            </section>
+            <div class="form-navigation">
+                <div class="bouton" id="bouton-precedent" data-direction="-1">Précédent</div>
+                <div class="bouton" id="bouton-suivant" data-direction="1">Suivant</div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+

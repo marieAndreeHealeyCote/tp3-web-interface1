@@ -1,0 +1,40 @@
+.carte {
+    & > * + * {
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+  
+    & > * + a {
+      margin-top: 20px;
+    }
+  }
+  .carte-grille {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content:start;
+    margin-top: 2rem;
+  }
+  .carte-conteneur {
+    margin-bottom: 2em;
+    min-height: 50px;
+    flex-basis: calc((100% / 3 - 1rem) + (1rem / 3));
+  }
+  
+  .carte-conteneur:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--couleur-box-shadow);
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .carte-bouton{
+    text-transform: uppercase;
+  }
+  
+  

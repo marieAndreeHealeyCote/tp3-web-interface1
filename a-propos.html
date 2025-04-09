@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos TP3</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- source logo https://www.canva.com/design/DAGewj0MDyg/TEk7KuX0lNiyKDl4-_WTkg/edit?locale=fr-FR -->
+    <!-- source images de produits https://www.pexels.com/fr-fr/ -->
+    <script src="assets/js/pages/a-propos.js" type="module"></script>
+</head>
+<body data-theme="nuit">
+    <header>
+        <nav id="nav-principale">
+            <img src="assets/img/logo1.png" alt="logo jour" class="logo jour">
+            <img src="assets/img/logo2.png" alt="logo nuit" class="logo nuit">
+            <ul class="nav-liste a-propos">
+            </ul>
+            <ul data-mode>
+                <li data-mode-option="jour">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                    </svg>
+                </li>
+                <li data-mode-option="nuit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section> 
+            <div class="carrousel">
+                <h1 class="carrousel__titre">Articles en vedette</h1>
+                <div class="carrousel__conteneur">
+                    <div class="carrousel__liste">
+                        <div class="carrousel__image-conteneur slider-item">
+                            <img src="assets/img/produits/casquette.jpg" alt="casquette">
+                        </div>
+                        <div class="carrousel__image-conteneur slider-item">
+                            <img src="assets/img/produits/salopette.jpg" alt="salopette">
+                        </div>
+                        <div class="carrousel__image-conteneur slider-item">
+                            <img src="assets/img/produits/chemisier.jpg" alt="chemisier">
+                        </div>
+                        <div class="carrousel__image-conteneur slider-item">
+                            <img src="assets/img/produits/cargo.jpg" alt="cargo">
+                        </div>
+                        <div class="carrousel__image-conteneur slider-item">
+                            <img src="assets/img/produits/collier.jpg" alt="collier">
+                        </div>
+                        <div class="carrousel__image-conteneur slider-item">
+                            <img src="assets/img/produits/jeans.jpg" alt="jeans">
+                        </div>
+                    </div>
+                    <div class="carrousel__controles">
+                        <div data-direction="-1" class="carrousel__controles__precedent">&#11164;</div>
+                        <div data-direction="1" class="carrousel__controles__suivant">&#11166;</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="grille carte-grille">
+                    <article class="carte carte-conteneur">
+                        <h2>Bienvenue dans l’univers de Kimberly Nguyen.</h2>
+                        <p>Fondée par la designer Kimberly Nguyen, notre marque est née d’un désir simple : créer des vêtements et des accessoires qui reflètent l’énergie du moment, tout en conservant une touche intemporelle. Chaque pièce est pensée pour celles et ceux qui osent s’exprimer, qui voient la mode comme une extension de leur personnalité.</p>
+                        <div class="bouton carte-bouton"><a href="https://www.google.ca/maps/place/Coll%C3%A8ge+de+Maisonneuve/@45.550865,-73.5581704,16z/data=!3m1!4b1!4m6!3m5!1s0x4cc91bf5bacbeffd:0x68ff300997eff5c!8m2!3d45.5508613!4d-73.5532995!16zL20vMDU3dHFx?hl=fr&entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">venez nous visiter !</a></div>
+                    </article>
+                    <article class="carte carte-conteneur">
+                        <h2>Un style affirmé, tendance, et vivant.</h2>
+                        <p>Kimberly, passionnée de design depuis toujours, puise son inspiration dans la rue, l’art contemporain, la culture pop et les contrastes de la vie urbaine. Sa signature : un mélange audacieux de coupes modernes, de matières de qualité et de détails inattendus.</p>
+                        <p>"Créez vos propres règles."</p>
+                        <div class="bouton carte-bouton"><a href="index.html">venez vous inspirer !</a></div>
+                    </article>
+                    <article class="carte carte-conteneur">
+                        <h2>L’élan d’une mode libre et en mouvement.</h2>
+                        <p>Nous croyons en une mode qui ne suit pas les règles, mais qui en crée de nouvelles. Ici, vous trouverez des vêtements et accessoires conçus pour bouger avec vous, vous inspirer, et vous faire sentir bien dans votre peau, et ce, à chaque jour.</p>
+                        <p>"Incarnez le changement."</p>
+                        <div class="bouton carte-bouton"><a href="formulaire.html">venez acheter !</a></div>
+                    </article>
+                    <article class="carte carte-conteneur">
+                        <h2>Authentique. Créatif. Branché. Unique.</h2>
+                        <p>Rejoignez notre communauté et explorez une nouvelle façon de vivre la mode, à la manière de Kimberly Nguyen. Laissez-vous inspirer par un univers où l'élégance rencontre l'authenticité où chaque pièce de vêtements, chaque accessoire, raconte une histoire, la vôtre peut-être demain.</p>
+                        <p>"Soyez l'inspiration, chaque jour."</p>
+                        <div class="bouton carte-bouton"><a href="contact.html">venez nous rejoindre !</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div data-boite-modale="boite-modale">
+    </div>
+</body>
+</html>

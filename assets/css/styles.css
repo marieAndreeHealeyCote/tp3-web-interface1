@@ -1,0 +1,24 @@
+/*Général*/
+@import url("./reset.css");
+@import url("./base/variables/couleur.css");
+@import url("./base/base.css");
+
+/*composantes*/
+@import url("./components/navigation.css");
+@import url("./components/bouton.css");
+@import url("./components/form.css");
+@import url("./components/barre-progession.css");
+@import url("./components/carrousel.css");
+@import url("./components/boiteModale.css");
+@import url("./components/modeNuit.css");
+@import url("./components/carte.css");
+
+
+/*mise en page*/
+@import url("./layout/grille.css");
+
+@import url("./pages/accueil.css");
+@import url("./pages/formulaire.css");
+
+@import url("./base/exceptions.css");
+/* ======== */
