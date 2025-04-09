@@ -1,3 +1,7 @@
+LIEN GIT PAGES
+https://marieandreehealeycote.github.io/tp3-web-interface1/
+
+POST-MORTEM
 difficultés rencontrées : 
 
 carrousel :
